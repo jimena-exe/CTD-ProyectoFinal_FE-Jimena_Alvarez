@@ -6,3 +6,7 @@ a cada sección de la página.
 También he realizado el esqueleto de la pagina
 
 Fecha: Martes 5 de Septiembre
+
+He realizado el diseño casi completo de la pagina, desde el header hasta el footer
+He aplicado estilos a todo, menos al footer totalmente.
+Puede que las fotos de los deportistas haya que arreglarlas
