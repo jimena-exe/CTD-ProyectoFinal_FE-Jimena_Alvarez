@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
     width: 500px;
 }
-.opciones-header span:hover, ,.boton-contact1:hover,.boton-contact2:hover, .boton-Mas:hover{
+.opciones-header span:hover,.boton-contact1:hover,.boton-contact2:hover, .boton-Mas:hover{
     color: #242E5299;
     cursor: pointer;
 }
