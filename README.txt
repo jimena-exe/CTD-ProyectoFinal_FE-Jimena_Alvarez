@@ -5,8 +5,18 @@ He realizado el analisis del diseño y he puesto unas guías de lo que creo que 
 a cada sección de la página.
 También he realizado el esqueleto de la pagina
 
+Fecha: Lunes 4 de Septiembre
+Hoy Kevin me ha dicho que no ha podido avanzar y le he pasado el esqueleto de la página
+
 Fecha: Martes 5 de Septiembre
 
 He realizado el diseño casi completo de la pagina, desde el header hasta el footer
 He aplicado estilos a todo, menos al footer totalmente.
 Puede que las fotos de los deportistas haya que arreglarlas
+
+Fecha: Miercoles 6 de Septiembre
+Hoy Kevin me ha dicho que no ha podido avanzar
+
+Hoy arreglé la vista de las fotos, que se cortaban al achicar la página.
+También he modificado el footer y el letrero de Copyright
+Apliqué el media query para el header y la sección de imagen inicial

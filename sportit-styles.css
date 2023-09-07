@@ -11,7 +11,6 @@ header{
     height: 174px;
     justify-content: space-around;
     width: 100%;
-    
 }
 
 .icono-sportit{
@@ -24,11 +23,11 @@ header{
     justify-content: space-between;
     width: 500px;
 }
-.opciones-header span:hover, .boton-contact:hover, .boton-Mas:hover{
+.opciones-header span:hover, ,.boton-contact1:hover,.boton-contact2:hover, .boton-Mas:hover{
     color: #242E5299;
     cursor: pointer;
 }
-.boton-contact{
+.boton-contact1, .boton-contact2{
     background-color: #8B48BF;
     border-radius: 50px;
     border-width: 0;
@@ -38,6 +37,14 @@ header{
     height: 44px;
     padding: 10px;
     width: 134px;
+    transition: background-color 0.5s;
+}
+.boton-contact1:hover,.boton-contact2:hover, .boton-Mas:hover, .boton-got:hover{
+    background-color: #1E1E26;
+    color: #FFFFFF;
+}
+.hamburguesa{
+    display: none;
 }
 
 
@@ -49,7 +56,7 @@ header{
     justify-content: space-evenly;
     margin-bottom: 5rem;
     margin-top: 4rem ;
-    width: 100%;  /*width: 1440px;*/
+    width: 100%;
 }
 
 .imagen-tenis{
@@ -82,12 +89,15 @@ header{
     justify-content: space-evenly;
     width: 100%; /*width:1440px;*/
 }
-.sectbanner1 span{
-    width: 450px;
-}
 .sectbanner1 h3{
     font-size: 36px;
     width: 470px;
+}
+.span1Banner{
+    width: 450px;
+}
+.span1Banner::before{
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
 }
 
 /*------------------SECCIÓN TARJETAS CON NÚMEROS--------------------*/
@@ -97,7 +107,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 428px;
+    /*height: 428px;*/
     width: 100%; /*width:1440px;*/
     
 }
@@ -177,9 +187,10 @@ header{
     color: #B9B9C1;
     display: flex;
     flex-direction: column;
-    height: 254px;
+    /*height: 300px;*/
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
@@ -212,6 +223,9 @@ header{
     color: #3F4868;
     font-weight: 500;
 }
+.sect-boton{
+    margin-top: 30px;
+}
 .boton-Mas{
     background-color: #8B48BF;
     border-radius: 50px;
@@ -221,14 +235,15 @@ header{
     height: 44px;
     padding: 10px;
     width: 134px;
+    transition: background-color 0.5s;
 }
 
 /*------------------SECCIÓN FOOTER 1--------------------*/
 footer{
-    background-color: darkcyan;
+    background-color: #1E1E26;
+    bottom: 0;
     height: 471px;
     position: relative;
-    bottom: 0;
 }
 .sectBannerFooter{
     align-items: center;
@@ -253,15 +268,19 @@ footer{
     height: 44px;
     padding: 10px;
     width: 134px;
+    transition: background-color 0.5s;
 }
+
 
 /*------------------SECCIÓN FOOTER 2 INFORMACIÓN--------------------*/
 .sectInfo{
     align-items: center;
-    background-color: #1E1E26;
     display: flex;
     height: 247px;
     justify-content: space-around;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*Sección Icono sportit e íconos social media*/
 .iconoFooter{
@@ -269,7 +288,7 @@ footer{
     height: 25px;
     width: 107px;
 }
-.sect1Icons{
+.sect-Icons{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -278,7 +297,6 @@ footer{
 /*-----------------*/
 
 .opcFooter{
-    background-color: lightcoral;
     color: #FFFFFF;
     display: flex;
     height: 141px;
@@ -286,7 +304,6 @@ footer{
     width: 392px;
 }
 .opcF1, .opcF2{
-    background-color: darkolivegreen;
     display: flex;
     flex-direction: column;
 }
@@ -298,7 +315,6 @@ footer{
 
 .iconsSocial{
     align-items: center;
-    background-color: darkcyan;
     display: flex;
     height: 22px;
     justify-content: space-between;
@@ -353,40 +369,109 @@ form{
     height: 42px;
     padding: 10px;
     width: 63px;
+    transition: background-color 0.5s;
 }
 
-.sect2Form{
+.btnForm:hover{
+    background-color: #FFFFFF;
+    color: #1E1E26;
+}
+
+
+.sect-Form{
+    align-items:end;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 141px;
-    text-align: right;
+    /*height: 160px;*/
+    justify-content: space-between;
+    width: 392px;
 }
-.sect2Form span{
+.copyr{
+    font-size: 12.5px;
     color: #8C8C94;
 }
 
 
-
-
-
-
-
-
 /*------------------MEDIA QUERYS--------------------*/
+
+
 /*Si es max, es de este valor para abajo*/
 @media (max-width: 480px){
-    header{
-        background-color: #323851;
+
+    /*------------------HEADER--------------------*/
+    .opciones-header, .boton-contact1{
+        display: none;
     }
+    .hamburguesa{
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width:  60px;;
+    }
+
+    /*------------------SECCIÓN INICIO IMAGEN--------------------*/
+    .sectInicio{
+        height: 840px;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+    .imagen-tenis{
+        height: 341px ;
+        width: 400px;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+    .texto-intro{
+        height: 460px;
+        width: 400px;
+    }
+    .texto-intro h1{
+        color: #232C50;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    /*------------------SECCIÓN BANNER 1--------------------*/
+    .sectbanner1{
+        background-color: #3CDDF3;
+        height: 306px;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+    .sectbanner1 h3, .span1Banner{
+        width: 440px;
+    }
+    .span1Banner::before{
+        content: "Manage provides all the functionality yourteas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+    }
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Si es min, es de este valor para arriba*/
+/*
 @media (min-width: 1440px){
     header{
         
     }
 }
+*/
 
-
-/*PARA MOVILE  width: 480px; MÍNIMO O MÁXIMO*/
