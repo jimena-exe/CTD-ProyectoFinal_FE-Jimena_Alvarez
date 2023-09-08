@@ -4,409 +4,7 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-/*------------------HEADER--------------------*/
-header{
-    align-items: center;
-    display: flex;
-    height: 174px;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.icono-sportit{
-    background-image: url(imagenes/logo.svg);
-    height: 25px;
-    width: 107px;
-}
-.opciones-header{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-    color: #242E52;
-}
-.opciones-header a:link{
-    text-decoration: none;
-}
-.opciones-header a:visited{
-    color: #242E52;
-}
-
-.opciones-header a:hover{
-    color: #242E5299;
-}
-.boton{
-    background-color: #8B48BF;
-    border-radius: 50px;
-    border-width: 0;
-    color: #FFFFFF;
-    cursor: pointer;
-    height: 44px;
-    padding: 10px;
-    width: 134px;
-    /*efecto*/
-    box-shadow: inset 0 0 0 0 #1E1E26;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-}
-.contact1{
-    box-shadow: 0px 4px 7px 0px #00000040;
-}
-.boton:hover, .boton-got:hover{
-    box-shadow: inset 400px 0 0 0 #232C50;
-    color: #FAFAFA;
-    border-width: 1px;
-    border-color: #3CDDF3;
-}
-.hamburguesa{
-    display: none;
-}
-
-/*------------------SECCIÓN INICIO IMAGEN--------------------*/
-.sectInicio{
-    align-items: center;
-    display: flex;
-    height: 461px;
-    justify-content: space-evenly;
-    margin-bottom: 5rem;
-    margin-top: 4rem ;
-    width: 100%;
-}
-
-.imagen-tenis{
-    background-image: url(imagenes/padel-intro.png);
-    height: 461px ;
-    width: 540px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.texto-intro{
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    height: 399px;
-    justify-content: space-between;
-    text-align: right;
-    width: 450px;
-}
-.texto-intro h1{
-    color: #232C50;
-    font-size: 50px;
-    font-weight: 700;
-}
-
-/*------------------SECCIÓN BANNER 1--------------------*/
-.sectbanner1{
-    align-items: center;
-    background-color: #8B48BF;
-    color: #FFFFFF;
-    display: flex;
-    height: 168px;
-    justify-content: space-evenly;
-    width: 100%; /*width:1440px;*/
-}
-.sectbanner1 h3{
-    font-size: 36px;
-    width: 470px;
-}
-.span1Banner{
-    width: 450px;
-}
-.span1Banner::before{
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
-}
-
-/*------------------SECCIÓN TARJETAS CON NÚMEROS--------------------*/
-.tarjetasNumeros{
-    background-color: #FAFAFA; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*height: 428px;*/
-    width: 100%; /*width:1440px;*/
-    
-}
-
-.espacio1y2, .espacio3{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-    width: 100%;/*width: 1440px;*/
-    flex-wrap: wrap;
-}
-.numyH4{
-    display: flex;
-    align-items: center;
-}
-.numero{
-    background-color: #8B48BF;
-    color: #FFFFFF;
-    height: 43px;
-    width: 70px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-}
-
-.uno, .dos, .tres{
-    display: flex;
-    flex-direction: column;
-    height: 162px;
-    width: 530px;
-}
-.unoContent, .dosContent, .tresContent{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-left: 20px;
-    /*width: 437px;*/
-}
-.unoContent p, .dosContent p, .tresContent p{
-    align-self: flex-end;
-    color: #B3B2B7;
-    height: 104px;
-    margin-top: 10px;
-    width: 440px;
-
-    
-}
-
-/*------------------SECCIÓN TARJETAS DEPORTISTAS--------------------*/
-.bestMonth{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 650px;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.bestMonth h3{
-    align-self: center;
-    font-weight: 700;
-    font-size: 39px;
-    height: 61px;
-    text-align:center;
-    width: 424px;    
-}
-
-.tarjetasJugadores{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    height: 350px;
-    margin-top: 50px;
-    margin-right:35px;
-    margin-left: 35px;
-}
-
-
-.sanyo, .lebron, .navarro{
-    align-items: center;
-    background-color: #FAFAFA;
-    color: #B9B9C1;
-    display: flex;
-    flex-direction: column;
-    /*height: 300px;*/
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-.fotoSanyo{
-    background-image: url(imagenes/avatar-sanyo.png);
-    height: 70px;
-    position: relative;
-    top: -40px;
-    width: 70px;
-    z-index: 0;
-}
-.fotoLebron{
-    background-image: url(imagenes/avatar.lebron.png);
-    height: 70px;
-    position: relative;
-    top: -40px;
-    width: 70px;
-}
-.fotoNavarro{
-    background-image: url(imagenes/avatar-navarro.png);
-    height: 70px;
-    position: relative;
-    top: -40px;
-    width: 70px;
-
-}
-
-.sanyo span, .lebron span, .navarro span{
-    margin-bottom: 30px;
-    color: #3F4868;
-    font-weight: 500;
-}
-.sect-boton{
-    margin-top: 30px;
-}
-
-/*------------------SECCIÓN FOOTER 1--------------------*/
-footer{
-    background-color: #1E1E26;
-    bottom: 0;
-    height: 471px;
-    position: relative;
-}
-.sectBannerFooter{
-    align-items: center;
-    background-color: #8B48BF;
-    color: #FFFFFF;
-    display: flex;
-    height: 224px;
-    justify-content: space-around;
-}
-.sectBannerFooter h2{
-    font-size: 40px;
-    font-weight: 700;
-    width: 450px;
-}
-.boton-got{
-    background-color: #FFFFFF;
-    border-radius: 50px;
-    border-width: 0;
-    box-shadow: 0px 4px 7px 0px #00000040;
-    color: #8B48BF;
-    cursor: pointer;
-    height: 44px;
-    padding: 10px;
-    width: 134px;
-    /*efecto*/
-    box-shadow: inset 0 0 0 0 #1E1E26;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-}
-
-
-
-/*------------------SECCIÓN FOOTER 2 INFORMACIÓN--------------------*/
-.sectInfo{
-    align-items: center;
-    display: flex;
-    height: 247px;
-    justify-content: space-around;
-    margin-bottom: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/*Sección filas de opciones*/
-.opcFooter{
-    color: #FFFFFF;
-    display: flex;
-    height: 141px;
-    justify-content: space-around;
-    width: 392px;
-}
-.opcF1, .opcF2{
-    display: flex;
-    flex-direction: column;
-}
-.opcF1 a, .opcF2 a{
-    font-size: 17px;
-    margin: 5px 5px;
-}
-.opcF1 a:link, .opcF2 a:link{
-    text-decoration: none;
-}
-.opcF1 a:visited, .opcF2 a:visited {
-    color: #FFFFFF;
-}
-
-/*------------------SECCIÓN FOOTER ÍCONOS--------------------*/
-/*Sección Icono sportit e íconos social media*/
-.iconoFooter{
-    background-image: url(imagenes/sportit.svg);
-    height: 25px;
-    width: 107px;
-}
-.sect-Icons{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 141px;
-}
-/*-----------------*/
-.iconsSocial{
-    align-items: center;
-    display: flex;
-    height: 22px;
-    justify-content: space-between;
-    width: 153px;
-}
-.iconF{
-    background-image: url(imagenes/icon-facebook.svg);
-    height: 20px;
-    width: 20px;
-}
-.iconY{
-    background-image: url(imagenes/icon-youtube.svg);
-    height: 20px;
-    width: 20px;
-}
-.iconT{
-    background-image: url(imagenes/icon-twitter.svg);
-    height: 20px;
-    width: 20px;
-    background-size: cover;
-}
-.iconP{
-    background-image: url(imagenes/icon-pinterest.svg);
-    height: 20px;
-    width: 20px;
-}
-.iconI{
-    background-image: url(imagenes/icon-instagram.svg);
-    height: 20px;
-    width: 20px;
-}
-
-/*------------------SECCIÓN FOOTER FORMULARIO--------------------*/
-form{
-    width: 272px;
-}
-.inputUpdate{
-    background-color: #FFFFFF;
-    border-radius: 50px;
-    border-width: 0;
-    color: #A0A0A0;
-    height: 44px;
-    padding: 10px;
-    width: 201px;
-}
-.formB{
-    height: 42px;
-    padding: 10px;
-    width: 63px;
-}
-.sect-Form{
-    align-items:end;
-    display: flex;
-    flex-direction: column;
-    height: 141px;
-    justify-content: space-between;
-    width: 392px;
-}
-.copyr{
-    font-size: 12.5px;
-    color: #8C8C94;
-}
-
-
 /*------------------MEDIA QUERYS--------------------*/
-
-
-/*Si es max, es de este valor para abajo*/
 @media (max-width: 480px){
 
     /*------------------HEADER--------------------*/
@@ -419,8 +17,6 @@ form{
         height: 60px;
         width:  60px;;
     }
-
-    
 
     /*------------------SECCIÓN BANNER 1--------------------*/
 
@@ -555,8 +151,6 @@ form{
 }
 
 
-
-
 @media (max-width: 768px) {
 
     .sectbanner1{
@@ -595,3 +189,384 @@ form{
 }
 
 
+/*------------------HEADER--------------------*/
+header{
+    align-items: center;
+    display: flex;
+    height: 174px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icono-sportit{
+    background-image: url(imagenes/logo.svg);
+    height: 25px;
+    width: 107px;
+}
+.opciones-header{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    color: #242E52;
+}
+.opciones-header a:link{
+    text-decoration: none;
+}
+.opciones-header a:visited{
+    color: #242E52;
+}
+
+.opciones-header a:hover{
+    color: #242E5299;
+}
+.boton{
+    background-color: #8B48BF;
+    border-radius: 50px;
+    border-width: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 44px;
+    padding: 10px;
+    width: 134px;
+    /*efecto*/
+    box-shadow: inset 0 0 0 0 #1E1E26;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+.contact1{
+    box-shadow: 0px 4px 7px 0px #00000040;
+}
+.boton:hover, .boton-got:hover{
+    box-shadow: inset 400px 0 0 0 #232C50;
+    color: #FAFAFA;
+    border-width: 1px;
+    border-color: #3CDDF3;
+}
+.hamburguesa{
+    display: none;
+}
+
+/*------------------SECCIÓN INICIO IMAGEN--------------------*/
+.sectInicio{
+    align-items: center;
+    display: flex;
+    height: 461px;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    margin-top: 4rem ;
+    width: 100%;
+}
+
+.imagen-tenis{
+    background-image: url(imagenes/padel-intro.png);
+    height: 461px ;
+    width: 540px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.texto-intro{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 399px;
+    justify-content: space-between;
+    text-align: right;
+    width: 450px;
+}
+.texto-intro h1{
+    color: #232C50;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*------------------SECCIÓN BANNER 1--------------------*/
+.sectbanner1{
+    align-items: center;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    height: 168px;
+    justify-content: space-evenly;
+    width: 100%; 
+}
+.sectbanner1 h3{
+    font-size: 36px;
+    width: 470px;
+}
+.span1Banner{
+    width: 450px;
+}
+.span1Banner::before{
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
+}
+
+/*------------------SECCIÓN TARJETAS CON NÚMEROS--------------------*/
+.tarjetasNumeros{
+    background-color: #FAFAFA; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+.espacio1y2, .espacio3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.numyH4{
+    display: flex;
+    align-items: center;
+}
+.numero{
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    height: 43px;
+    width: 70px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.uno, .dos, .tres{
+    display: flex;
+    flex-direction: column;
+    height: 162px;
+    width: 530px;
+}
+.unoContent, .dosContent, .tresContent{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.unoContent p, .dosContent p, .tresContent p{
+    align-self: flex-end;
+    color: #B3B2B7;
+    height: 104px;
+    margin-top: 10px;
+    width: 440px;    
+}
+
+/*------------------SECCIÓN TARJETAS DEPORTISTAS--------------------*/
+.bestMonth{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.bestMonth h3{
+    align-self: center;
+    font-weight: 700;
+    font-size: 39px;
+    height: 61px;
+    text-align:center;
+    width: 424px;    
+}
+.tarjetasJugadores{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    margin-top: 50px;
+    margin-right:35px;
+    margin-left: 35px;
+}
+.sanyo, .lebron, .navarro{
+    align-items: center;
+    background-color: #FAFAFA;
+    color: #B9B9C1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.fotoSanyo{
+    background-image: url(imagenes/avatar-sanyo.png);
+    height: 70px;
+    position: relative;
+    top: -40px;
+    width: 70px;
+    z-index: 0;
+}
+.fotoLebron{
+    background-image: url(imagenes/avatar.lebron.png);
+    height: 70px;
+    position: relative;
+    top: -40px;
+    width: 70px;
+}
+.fotoNavarro{
+    background-image: url(imagenes/avatar-navarro.png);
+    height: 70px;
+    position: relative;
+    top: -40px;
+    width: 70px;
+
+}
+.sanyo span, .lebron span, .navarro span{
+    margin-bottom: 30px;
+    color: #3F4868;
+    font-weight: 500;
+}
+.sect-boton{
+    margin-top: 30px;
+}
+
+/*------------------SECCIÓN FOOTER 1--------------------*/
+footer{
+    background-color: #1E1E26;
+    bottom: 0;
+    height: 471px;
+    position: relative;
+}
+.sectBannerFooter{
+    align-items: center;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    height: 224px;
+    justify-content: space-around;
+}
+.sectBannerFooter h2{
+    font-size: 40px;
+    font-weight: 700;
+    width: 450px;
+}
+.boton-got{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: 0px 4px 7px 0px #00000040;
+    color: #8B48BF;
+    cursor: pointer;
+    height: 44px;
+    padding: 10px;
+    width: 134px;
+    /*efecto*/
+    box-shadow: inset 0 0 0 0 #1E1E26;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/*------------------SECCIÓN FOOTER 2 INFORMACIÓN--------------------*/
+.sectInfo{
+    align-items: center;
+    display: flex;
+    height: 247px;
+    justify-content: space-around;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Sección filas de opciones*/
+.opcFooter{
+    color: #FFFFFF;
+    display: flex;
+    height: 141px;
+    justify-content: space-around;
+    width: 392px;
+}
+.opcF1, .opcF2{
+    display: flex;
+    flex-direction: column;
+}
+.opcF1 a, .opcF2 a{
+    font-size: 17px;
+    margin: 5px 5px;
+}
+.opcF1 a:link, .opcF2 a:link{
+    text-decoration: none;
+}
+.opcF1 a:visited, .opcF2 a:visited {
+    color: #FFFFFF;
+}
+
+/*------------------SECCIÓN FOOTER ÍCONOS--------------------*/
+/*Sección Icono sportit e íconos social media*/
+.iconoFooter{
+    background-image: url(imagenes/sportit.svg);
+    height: 25px;
+    width: 107px;
+}
+.sect-Icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 141px;
+}
+/*-----------------*/
+.iconsSocial{
+    align-items: center;
+    display: flex;
+    height: 22px;
+    justify-content: space-between;
+    width: 153px;
+}
+.iconF{
+    background-image: url(imagenes/icon-facebook.svg);
+    height: 20px;
+    width: 20px;
+}
+.iconY{
+    background-image: url(imagenes/icon-youtube.svg);
+    height: 20px;
+    width: 20px;
+}
+.iconT{
+    background-image: url(imagenes/icon-twitter.svg);
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+}
+.iconP{
+    background-image: url(imagenes/icon-pinterest.svg);
+    height: 20px;
+    width: 20px;
+}
+.iconI{
+    background-image: url(imagenes/icon-instagram.svg);
+    height: 20px;
+    width: 20px;
+}
+
+/*------------------SECCIÓN FOOTER FORMULARIO--------------------*/
+form{
+    width: 272px;
+}
+.inputUpdate{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    border-width: 0;
+    color: #A0A0A0;
+    height: 44px;
+    padding: 10px;
+    width: 201px;
+}
+.formB{
+    height: 42px;
+    padding: 10px;
+    width: 63px;
+}
+.sect-Form{
+    align-items:end;
+    display: flex;
+    flex-direction: column;
+    height: 141px;
+    justify-content: space-between;
+    width: 392px;
+}
+.copyr{
+    font-size: 12.5px;
+    color: #8C8C94;
+}
